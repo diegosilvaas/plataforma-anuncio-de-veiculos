@@ -23,7 +23,7 @@ if(!empty($result)) {
     exit();
     
 } else {
-    $SESSION['nao_autenticado'] = true;
+    $_SESSION['nao_autenticado'] = true;
     header('Location: index.php' );
     exit();
 }
