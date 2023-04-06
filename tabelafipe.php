@@ -19,7 +19,7 @@
     <a class="nav-link" href="tabelafipe.php">Tabela Fipe</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled">Sair</a>
+    <a class="nav-link" href="index.php" disabled>Sair</a>
   </li>
 </ul>
 
