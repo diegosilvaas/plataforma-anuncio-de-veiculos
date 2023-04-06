@@ -57,8 +57,13 @@ session_start();
 
   </div>
 
-   <script>
-    
+  <script>
+    var alertLoginEl = document.querySelector('#alerta_login');
+
+    setTimeout(() => {
+      alertLoginEl.style.display = 'none';
+      alertLoginEl.style.transition = '1s';
+    }, "8000");
   </script>
 </body>
 
