@@ -18,16 +18,17 @@ session_start();
 
 <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+    <a class="nav-link" href="painel.php">Inicio</a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="formulariodecadastro.php">Cadastrar veiculo</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Cadastrar veiculo</a>
+    <a class="nav-link" href="tabelafipe.php">Tabela Fipe</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Tabela Fipe</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Sair</a>
+    <a class="nav-link" href="index.php" disabled>Sair</a>
   </li>
 </ul>
 
