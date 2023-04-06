@@ -10,10 +10,33 @@ session_start();
 
 <?php include 'includes/head.php'; ?>
 
+
+
+
+
 <body>
 
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Cadastrar veiculo</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Tabela Fipe</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Sair</a>
+  </li>
+</ul>
+
+
+
     <div class="container">
-        <h1> seja bem vindo </h1>
+        <h1> </h1>
+
+   
 
         <div class="row">
 
