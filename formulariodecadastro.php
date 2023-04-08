@@ -44,7 +44,7 @@ session_start();
 
             <div class="col-md-3 mb-3">
                 <label for="veiculopor">Veiculo por</label>
-                <input type="text" name="veiculopor" class="form-control is-invalid" id="veiculopor" placeholder="Preço do veiculo" required>
+                <input type="number" name="veiculopor" class="form-control is-invalid" id="veiculopor" placeholder="Preço do veiculo" required>
 
             </div>
 
@@ -104,13 +104,13 @@ session_start();
 
             <div class="col-md-3 mb-3">
                 <label for="anofabricacao">Ano de fabricação</label>
-                <input name="anofabricacao" type="text" class="form-control is-invalid" id="anofabricacao" placeholder="" required>
+                <input name="anofabricacao" type="number" class="form-control is-invalid" id="anofabricacao" placeholder="" required>
 
             </div>
 
             <div class="col-md-3 mb-3">
                 <label for="anomodelo">Ano do modelo</label>
-                <input name="anomodelo" type="text" class="form-control is-invalid" id="anomodelo" placeholder="" required>
+                <input name="anomodelo" type="number" class="form-control is-invalid" id="anomodelo" placeholder="" required>
 
             </div>
 
@@ -122,13 +122,13 @@ session_start();
 
             <div class="col-md-3 mb-3">
                 <label for="km">Km Rodados</label>
-                <input name="km" type="text" class="form-control is-invalid" id="km" placeholder="0 km" required>
+                <input name="km" type="number" class="form-control is-invalid" id="km" placeholder="0 km" required>
 
             </div>
 
             <div class="col-md-3 mb-3">
                 <label for="portas">Portas</label>
-                <input name="portas" type="text" class="form-control is-invalid" id="portas" placeholder="" required>
+                <input name="portas" type="number" class="form-control is-invalid" id="portas" placeholder="" required>
 
             </div>
 
