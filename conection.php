@@ -35,3 +35,5 @@ class Conection
         return self::$db;
     }
 }
+
+

@@ -31,32 +31,47 @@ session_start();
         </li>
     </ul>
 
-    <form>
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Titulo</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Titulo do anuncio" required>
 
-        </div>
+    <form action="action.php" method="post" id="form">
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Veiculo por</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Preço do veiculo" required>
 
-        </div>
+        <form>
+            <div class="col-md-3 mb-3">
+                <label for="titulo">Titulo</label>
+                <input type="text" name="titulo" class="form-control is-invalid" id="titulo" placeholder="Titulo do anuncio" required>
 
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <label for="veiculopor">Veiculo por</label>
+                <input type="text" name="veiculopor" class="form-control is-invalid" id="veiculopor" placeholder="Preço do veiculo" required>
+
+            </div>
+
+            <!-- Aqui foi adicionado a div id="tipodeviculo"> 
+         <div id="tipodeviculo" name="tipodeveiculo">
         <select class="custom-select custom-select-lg mb-3">
             <option selected>Tipo de veiculo</option>
             <option value="Carro">Carro</option>
             <option value="Moto">Moto</option>
             <option value="Ônibus e caminhões">Ônibus e caminhões</option>
         </select>
+        </div> -->
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Marca</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Marca" required>
+            <div class="col-md-3 mb-3">
+                <label for="tipodeveiculo">Tipo de veiculo</label>
+                <input name="tipodeveiculo" type="text" class="form-control is-invalid" id="tipodeveiculo" placeholder="Carro, moto, camnihao..." required>
 
-        </div>
+            </div>
 
+            <div class="col-md-3 mb-3">
+                <label for="marca">Marca</label>
+                <input name="marca" type="text" class="form-control is-invalid" id="marca" placeholder="Marca" required>
+
+            </div>
+
+            <!-- Aqui foi adicionado a div id="categoria"> 
+<div id="categoria" name="categoria"> 
         <select class="custom-select custom-select-lg mb-4">
             <option selected>Categoria</option>
             <option value="Hatch">Hatch</option>
@@ -67,80 +82,89 @@ session_start();
             <option value="Caminhões pesados">Caminhões pesados</option>
             <option value="Ônibus">Ônibus</option>
         </select>
+</div> -->
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Modelo</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Dica: Palio, Renegade" required>
+            <div class="col-md-3 mb-3">
+                <label for="categoria">Categoria</label>
+                <input name="categoria" type="text" class="form-control is-invalid" id="categoria" placeholder="Sedan, hatch ..." required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Versão</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Exemplo: 1.0 ECONOMY, Longitude 1.8 Flex Automático" required>
+            <div class="col-md-3 mb-3">
+                <label for="modelo">Modelo</label>
+                <input name="modelo" type="text" class="form-control is-invalid" id="modelo" placeholder="Dica: Palio, Renegade" required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Ano de fabricação</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="" required>
+            <div class="col-md-3 mb-3">
+                <label for="versao">Versão</label>
+                <input name="versao" type="text" class="form-control is-invalid" id="versao" placeholder="Exemplo: 1.0 ECONOMY, Longitude 1.8 Flex Automático" required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Ano do modelo</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="" required>
+            <div class="col-md-3 mb-3">
+                <label for="anofabricacao">Ano de fabricação</label>
+                <input name="anofabricacao" type="text" class="form-control is-invalid" id="anofabricacao" placeholder="" required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Câmbio</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="" required>
+            <div class="col-md-3 mb-3">
+                <label for="anomodelo">Ano do modelo</label>
+                <input name="anomodelo" type="text" class="form-control is-invalid" id="anomodelo" placeholder="" required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Km Rodados</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="0 km" required>
+            <div class="col-md-3 mb-3">
+                <label for="cambio">Câmbio</label>
+                <input name="cambio" type="text" class="form-control is-invalid" id="cambio" placeholder="" required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Portas</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="" required>
+            <div class="col-md-3 mb-3">
+                <label for="km">Km Rodados</label>
+                <input name="km" type="text" class="form-control is-invalid" id="km" placeholder="0 km" required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Placa</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Insira as letras da placa em maiusculo" required>
+            <div class="col-md-3 mb-3">
+                <label for="portas">Portas</label>
+                <input name="portas" type="text" class="form-control is-invalid" id="portas" placeholder="" required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Cor</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="" required>
+            <div class="col-md-3 mb-3">
+                <label for="placa">Placa</label>
+                <input name="placa" type="text" class="form-control is-invalid" id="placa" placeholder="Insira as letras da placa em maiusculo" required>
 
-        </div>
+            </div>
 
-        <div class="col-md-3 mb-3">
-            <label for="validationServer04">Combustivel</label>
-            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="" required>
+            <div class="col-md-3 mb-3">
+                <label for="cor">Cor</label>
+                <input name="cor" type="text" class="form-control is-invalid" id="cor" placeholder="" required>
 
-        </div>
+            </div>
 
-        
+            <div class="col-md-3 mb-3">
+                <label for="combustivel">Combustivel</label>
+                <input name="combustivel" type="text" class="form-control is-invalid" id="combustivel" placeholder="" required>
 
-        
-
-        
+            </div>
 
 
-    </form>
 
-<div>
-    
-    <span style="width:100%; text-align:center;  display: inline-block;"><input type="submit" value="Cadastrar"></span>
-    </div>
+
+            <span style="width:100%; text-align:center;  display: inline-block;">
+                <button type="submit" name="btncadastrar"> Cadastrar </button>
+
+
+
+
+        </form>
+
+        </form>
+
+
+
 
 </body>
 
