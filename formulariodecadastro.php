@@ -11,6 +11,7 @@ session_start();
 <?php include 'includes/head.php'; ?>
 
 
+
 <body>
 
 
@@ -48,15 +49,6 @@ session_start();
 
             </div>
 
-            <!-- Aqui foi adicionado a div id="tipodeviculo"> 
-         <div id="tipodeviculo" name="tipodeveiculo">
-        <select class="custom-select custom-select-lg mb-3">
-            <option selected>Tipo de veiculo</option>
-            <option value="Carro">Carro</option>
-            <option value="Moto">Moto</option>
-            <option value="Ônibus e caminhões">Ônibus e caminhões</option>
-        </select>
-        </div> -->
 
             <div class="col-md-3 mb-3">
                 <label for="tipodeveiculo">Tipo de veiculo</label>
@@ -69,20 +61,6 @@ session_start();
                 <input name="marca" type="text" class="form-control is-invalid" id="marca" placeholder="Marca" required>
 
             </div>
-
-            <!-- Aqui foi adicionado a div id="categoria"> 
-<div id="categoria" name="categoria"> 
-        <select class="custom-select custom-select-lg mb-4">
-            <option selected>Categoria</option>
-            <option value="Hatch">Hatch</option>
-            <option value="Pick up">Pick up</option>
-            <option value="Sedan">Sedan</option>
-            <option value="Motos">Motos</option>
-            <option value="Caminhões leves">Caminhões leves</option>
-            <option value="Caminhões pesados">Caminhões pesados</option>
-            <option value="Ônibus">Ônibus</option>
-        </select>
-</div> -->
 
             <div class="col-md-3 mb-3">
                 <label for="categoria">Categoria</label>
@@ -165,6 +143,7 @@ session_start();
 
 
 
+      
 
 </body>
 
