@@ -1,8 +1,6 @@
  <?php include 'includes/head.php'; ?>
 
- <div class="container">
-      <div class="text-center">
-         <form id="voltar">
+
 
 
 
@@ -14,30 +12,30 @@
 
 <?php
 if (isset($_POST['btncadastrar'])) {
-    $titulo = $_POST['titulo'];
-    $veiculopor = $_POST['veiculopor'];
-    $tipodeveiculo = $_POST['tipodeveiculo'];
-    $marca = $_POST['marca'];
-    $categoria = $_POST['categoria'];
-    $modelo = $_POST['modelo'];
-    $versao = $_POST['versao'];
-    $anofabricacao = $_POST['anofabricacao'];
-    $anomodelo = $_POST['anomodelo'];
-    $cambio = $_POST['cambio'];
-    $km = $_POST['km'];
-    $portas = $_POST['portas'];
-    $placa = $_POST['placa'];
-    $cor = $_POST['cor'];
-    $combustivel = $_POST['combustivel'];
+    $title = $_POST['titulo'];
+    $vehicle = $_POST['veiculopor'];
+    $typevehicle = $_POST['tipodeveiculo'];
+    $brand = $_POST['marca'];
+    $category = $_POST['categoria'];
+    $model = $_POST['modelo'];
+    $version = $_POST['versao'];
+    $yearmanufactured = $_POST['anofabricacao'];
+    $modelyear = $_POST['anomodelo'];
+    $exchange = $_POST['cambio'];
+    $mileagedriven = $_POST['km'];
+    $doors = $_POST['portas'];
+    $plate = $_POST['placa'];
+    $color= $_POST['cor'];
+    $fuel = $_POST['combustivel'];
 
 
 
 
     $db = new PDO("mysql:dbname=login;host=localhost", 'root', '');
     $sql = "insert into cadastrodeveiculo (titulo, veiculopor, tipodeveiculo, marca, categoria, modelo, 
-    versao, anofabricacao, anomodelo, cambio, km, portas, placa, cor, combustivel) values ('$titulo', 
-        '$veiculopor', $tipodeveiculo, $marca, $categoria, $modelo, $versao, $anofabricacao, $anomodelo, 
-        $cambio, $km, $portas, $placa, $cor, $combustivel)";
+    versao, anofabricacao, anomodelo, cambio, km, portas, placa, cor, combustivel) values ('$title', 
+        '$vehicle', '$typevehicle', '$brand', '$category', '$model', '$version', '$yearmanufactured', '$modelyear', 
+        '$exchange', '$mileagedriven', '$doors', '$plate', '$color', '$fuel')";
     $stmt = $db->prepare($sql);
 
 
@@ -50,3 +48,7 @@ if (isset($_POST['btncadastrar'])) {
 
 
 ?>
+
+<div class="container">
+      <div class="text-center">
+         <form id="voltar">
