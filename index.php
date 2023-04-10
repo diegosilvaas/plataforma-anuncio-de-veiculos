@@ -46,7 +46,11 @@ session_start();
           <div class="clearfix"></div>
 
         </div> <!-- end login -->
-        <div class="logo">LOGO
+        <div class="logo">
+        
+            <img src="img/logo-250px-expandido.png">
+            
+        </div>   
 
           <div class="clearfix"></div>
         </div>
