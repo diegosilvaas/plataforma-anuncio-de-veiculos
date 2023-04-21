@@ -21,8 +21,6 @@ Foi feito uma tela de login para o cliente digitar dados de login e senha, a par
 ![9f77e800-7925-4501-9b5f-3102e568005c](https://user-images.githubusercontent.com/122392637/230819050-e754fa2d-0f4c-492b-9d67-b1f6ecf86ea6.jpg)
 
 
-## Notas: Projeto em andamento, não foi a função da tabela fipe.
-
 
 
 ## Para utilizar o sistema deve utilizar o seguinte login:
